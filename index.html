@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INK ROOM by PRAD | Tattoo and beauty studio, Delhi (concept demo)</title>
+<meta name="description" content="Tattoos, piercings and nail art in Sarojini Nagar, Delhi. Precision, hygiene and attention to detail. Book on WhatsApp. A concept demo, not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Brief: premium tattoo and beauty studio. Ink black, bone white, antique gold, a drop of oxblood.
+   One idea: a calm, clean studio where the craft is the star. Services from the shop's own WhatsApp catalogue:
+   Piercings, Nail Art, Pre-Designed Tattoos, Spiritual Tattoos, Minimalist Designs.
+   Signature moment: build your appointment in four taps, send it on WhatsApp.
+   Photos: labelled Unsplash stock, placeholders for the studio's own work. Safety and policy specifics are placeholders the studio confirms. */
+:root{--ink:#0e0d0c;--panel:#171513;--bone:#efe9de;--bone2:#e4dccd;--gold:#b89a5b;--red:#8a2227;--mute:#9b9488;--mutel:#6b6459;--line:rgba(239,233,222,.16);--linel:rgba(14,13,12,.16);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:74px}
+body{font-family:var(--sans);background:var(--ink);color:var(--bone);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-weight:300}
+img{display:block;max-width:100%}a{color:inherit}button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}ul{list-style:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1240px,100% - 48px);margin:0 auto}
+.up{text-transform:uppercase;letter-spacing:.2em;font-weight:500;font-size:.7rem}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1;letter-spacing:.005em}
+h2{font-size:clamp(2.2rem,5vw,4rem)}em{font-style:italic;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7em;padding:1.1em 2.1em;background:var(--bone);color:var(--ink);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;text-decoration:none;border:1px solid var(--bone);transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--gold);border-color:var(--gold)}.btn.o{background:transparent;color:var(--bone)}.btn.o:hover{background:var(--bone);color:var(--ink)}
+.btn.d{background:var(--ink);color:var(--bone);border-color:var(--ink)}.btn.d:hover{background:var(--red);border-color:var(--red)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease}.rv.in{opacity:1;transform:none}
+.ann{background:var(--red);color:#fff;text-align:center;padding:9px 16px}.ann a{text-decoration:underline;text-underline-offset:3px}
+header.hd{position:sticky;top:0;z-index:60;background:rgba(14,13,12,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:68px;gap:16px}
+.hd nav ul{display:flex;gap:28px}.hd nav a{text-decoration:none;opacity:.75}.hd nav a:hover{opacity:1;color:var(--gold)}
+.logo{font-family:var(--serif);font-weight:600;font-size:2rem;letter-spacing:.12em;text-decoration:none;line-height:1;text-align:center}.logo small{display:block;font-family:var(--sans);font-weight:400;font-size:.5rem;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+.hd .r{display:flex;justify-content:flex-end}
+.hero{position:relative;min-height:min(92vh,800px);display:flex;align-items:flex-end;overflow:hidden}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:saturate(.85) contrast(1.05)}.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,12,.4) 0%,rgba(14,13,12,.2) 35%,rgba(14,13,12,.92) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:70px}.hero h1{font-size:clamp(3.4rem,9vw,8rem);margin:14px 0 20px;max-width:12ch}.hero p{max-width:520px;font-size:1.06rem;opacity:.92;margin-bottom:30px}.cta{display:flex;gap:14px;flex-wrap:wrap}
+.trust{background:var(--bone);color:var(--ink)}.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}.trust div{padding:24px 22px;border-right:1px solid var(--linel);display:flex;flex-direction:column;gap:2px}.trust div:first-child{border-left:1px solid var(--linel)}.trust b{font-family:var(--serif);font-size:1.35rem;font-weight:600;line-height:1.1}.trust span{font-size:.82rem;color:var(--mutel)}.star{color:var(--gold)}
+section{padding:100px 0}.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:44px;flex-wrap:wrap}.sh p{color:var(--mute);max-width:440px}
+.svc{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.sc{position:relative;overflow:hidden;background:var(--panel);display:flex;flex-direction:column;grid-column:span 2}.sc:nth-child(1),.sc:nth-child(2){grid-column:span 3}
+.sc .im{position:relative;aspect-ratio:4/3;overflow:hidden}.sc:nth-child(n+3) .im{aspect-ratio:3/4}.sc .im img{width:100%;height:100%;object-fit:cover;filter:saturate(.9);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.sc:hover .im img{transform:scale(1.05)}
+.sc .tx{padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}.sc h3{font-size:1.9rem}.sc p{color:var(--mute);font-size:.92rem}.sc .go{margin-top:auto;padding-top:14px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--gold);text-decoration:none;display:flex;justify-content:space-between;border-top:1px solid var(--line)}.sc .go:hover{color:var(--bone)}
+.sc .n{position:absolute;left:16px;top:14px;z-index:2;font-family:var(--serif);font-size:1.1rem;background:rgba(14,13,12,.7);padding:.1em .6em}
+.book{background:var(--bone);color:var(--ink)}.book .sh p{color:var(--mutel)}.book h2 em{color:var(--red)}
+.bk{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+.stp{border-top:1px solid var(--linel);padding:22px 0}.stp:last-of-type{border-bottom:1px solid var(--linel)}.stp .l{display:flex;gap:14px;align-items:baseline;margin-bottom:12px}.stp .l i{font-family:var(--serif);font-style:normal;font-size:1.8rem;color:var(--red);line-height:1}.stp .l b{font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:.76rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips button{padding:.7em 1.3em;border:1px solid var(--linel);font-size:.88rem;background:transparent;transition:.2s}.chips button:hover{border-color:var(--ink)}.chips button.on{background:var(--ink);color:var(--bone);border-color:var(--ink)}
+.sum{background:var(--ink);color:var(--bone);padding:34px;position:sticky;top:92px}.sum h3{font-size:2rem;margin-bottom:14px}.sum dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:.92rem;margin-bottom:22px;border-top:1px solid var(--line);padding-top:16px}.sum dt{color:var(--mute)}.sum dd{text-align:right;font-weight:400}.sum .btn{width:100%;background:var(--bone);color:var(--ink)}.sum .btn:hover{background:var(--gold)}.sum .note{margin-top:14px}
+.note{font-size:.78rem;color:var(--mute)}
+.safe{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}.safe .ph{position:relative}.safe .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.85)}.safe .ph img+img{position:absolute;width:44%;aspect-ratio:3/4;right:-26px;bottom:-30px;border:8px solid var(--ink)}
+.safe h2{margin:12px 0 18px}.safe .lead{color:var(--mute);margin-bottom:26px;max-width:480px}
+.std li{display:flex;gap:16px;padding:16px 0;border-top:1px solid var(--line)}.std li:last-child{border-bottom:1px solid var(--line)}.std li i{font-family:var(--serif);font-style:normal;color:var(--gold);font-size:1.4rem;line-height:1.2;width:28px;flex:none}.std b{display:block;font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}.std span{color:var(--mute);font-size:.9rem}
+.chip{display:inline-block;margin-left:8px;font-size:.56rem;letter-spacing:.14em;border:1px solid var(--gold);color:var(--gold);padding:.12em .55em;vertical-align:middle}
+.gal{background:var(--panel)}.gal .g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gal figure{position:relative;overflow:hidden}.gal figure:nth-child(1){grid-row:span 2}.gal img{width:100%;height:100%;object-fit:cover;min-height:260px;filter:saturate(.9);transition:transform 1.2s}.gal figure:hover img{transform:scale(1.05)}.gal figcaption{position:absolute;left:14px;bottom:12px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(14,13,12,.75);padding:.3em .7em}
+.proc{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}.proc div{padding:30px 26px 6px 0}.proc i{font-family:var(--serif);font-style:normal;font-size:3rem;color:var(--gold);line-height:1;display:block;margin-bottom:8px}.proc b{display:block;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;margin-bottom:6px}.proc span{color:var(--mute);font-size:.92rem}
+.rev{background:var(--red)}.rev .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:52px;align-items:center}.rev .big{font-family:var(--serif);font-size:clamp(5rem,10vw,8.5rem);line-height:.85;font-weight:500}.rev .star{color:#e2c98e;letter-spacing:.12em}.rev p{opacity:.88;max-width:440px}.rev .btn{background:var(--bone);color:var(--ink)}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}.faq .lead p{color:var(--mute);margin:14px 0 26px;max-width:380px}
+details{border-top:1px solid var(--line)}details:last-child{border-bottom:1px solid var(--line)}summary{cursor:pointer;list-style:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:14px;font-weight:400;letter-spacing:.04em;font-size:1.02rem}summary::-webkit-details-marker{display:none}summary::after{content:'+';font-size:1.5rem;font-weight:300;color:var(--gold)}details[open] summary::after{content:'\2212'}details p{padding:0 0 22px;color:var(--mute);max-width:560px;font-size:.94rem}
+.vis{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line)}.vis .a{padding:48px}.vis .a h2{margin:10px 0 16px}.vis .a p{margin-bottom:6px}.vis .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.vis .b{background:var(--panel);padding:48px;display:grid;gap:20px;align-content:start}.vis .b .chips button{border-color:var(--line)}.vis .b .chips button:hover{border-color:var(--bone)}.vis .b .chips button.on{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+footer{background:#080807;border-top:1px solid var(--line);padding:64px 0 104px;color:var(--mute)}footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}footer .logo{text-align:left;color:var(--bone);display:block;margin-bottom:14px}footer h4{font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;color:var(--bone);margin-bottom:14px}footer li{margin-bottom:9px;font-size:.9rem}footer a{text-decoration:none}footer a:hover{color:var(--gold)}footer .fine{border-top:1px solid var(--line);margin-top:42px;padding-top:20px;font-size:.76rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px -6px rgba(0,0,0,.6);transition:transform .25s}.fab:hover{transform:scale(1.07)}.fab svg{width:27px;height:27px}
+.sticky{display:none}
+@media(max-width:960px){.hd nav{display:none}.hero{min-height:82vh}.hero .wrap{padding-bottom:46px}.trust .wrap{grid-template-columns:1fr 1fr}.trust div{border-bottom:1px solid var(--linel)}.trust div:nth-child(2){border-right:1px solid var(--linel)}section{padding:68px 0}.svc{grid-template-columns:1fr 1fr;gap:12px}.sc,.sc:nth-child(1),.sc:nth-child(2){grid-column:span 1}.sc:nth-child(1){grid-column:span 2}.sc .tx{padding:16px}.sc h3{font-size:1.45rem}.sc p{font-size:.84rem}.sc:nth-child(1) .im{aspect-ratio:16/10}.bk,.safe,.faq,.vis{grid-template-columns:1fr}.bk{gap:30px}.sum{position:static;padding:26px}.safe{gap:56px}.safe .ph img+img{right:-6px}.gal .g{grid-template-columns:1fr 1fr}.gal figure:nth-child(1){grid-row:auto;grid-column:span 2}.proc{grid-template-columns:1fr 1fr}.rev .wrap{grid-template-columns:1fr;gap:20px}.faq{gap:30px}.vis .a,.vis .b{padding:30px 22px}footer .cols{grid-template-columns:1fr 1fr}footer .cols>div:first-child{grid-column:1/-1}.fab{display:none}.sticky{display:flex;position:fixed;inset:auto 0 0;z-index:60;padding:10px 14px;background:var(--ink);border-top:1px solid var(--line)}.sticky .btn{flex:1}.wrap{width:min(1240px,100% - 32px)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="ann up">Shop A-164, Export Line, Sarojini Nagar Market, Delhi &middot; <a href="https://wa.me/919211894060" target="_blank" rel="noopener">Book on WhatsApp</a></div>
+<header class="hd"><div class="wrap">
+ <nav><ul class="up"><li><a href="#services">Services</a></li><li><a href="#book">Book</a></li><li><a href="#safe">Safety</a></li><li><a href="#visit">Visit</a></li></ul></nav>
+ <a class="logo" href="#top">INK ROOM<small>by PRAD</small></a>
+ <div class="r"><a class="btn" href="#book" style="padding:.9em 1.5em">Book</a></div>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0"><img src="img/hero.jpg" alt="Tattoo artist and client under a ring light"><div class="wrap">
+ <span class="up" style="color:var(--gold)">Tattoo &middot; Piercing &middot; Nail art</span>
+ <h1>Ink with <em>intent.</em></h1>
+ <p>Creative tattoo artistry and premium beauty services in Delhi, delivered with precision, hygiene and attention to detail. Ten-plus years of craft.</p>
+ <div class="cta"><a class="btn" href="#book">Book an appointment</a><a class="btn o" href="#services">See services</a></div>
+</div></section>
+
+<div class="trust"><div class="wrap">
+ <div><b>10+ years</b><span>Experience in tattoo artistry and beauty</span></div>
+ <div><b><span class="star">&#9733;</span> 4.8 on Google</b><span>From 151 customer reviews</span></div>
+ <div><b>Hygiene first</b><span>Precision and care in every session</span></div>
+ <div><b>A real studio</b><span>Shop A-164, Export Line, Sarojini Nagar</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+ <div class="sh"><h2>Our <em>services</em></h2><p>From a first piercing to a full custom piece. Choose a service and book it in a few taps.</p></div>
+ <div class="svc">
+  <article class="sc rv"><span class="n">01</span><div class="im"><img src="img/flash.jpg" alt="Sheets of pre-designed tattoo art on a table" loading="lazy"></div><div class="tx"><h3>Pre-Designed Tattoos</h3><p>A curated collection of popular tattoo designs, ready to choose from.</p><a class="go" href="#book" data-svc="Pre-designed tattoo"><span>Book this</span><span>&rarr;</span></a></div></article>
+  <article class="sc rv"><span class="n">02</span><div class="im"><img src="img/minimal.jpg" alt="Fine line script tattoo on an arm" loading="lazy"></div><div class="tx"><h3>Minimalist Designs</h3><p>Simple and elegant fine line tattoos, small in size and quiet in style.</p><a class="go" href="#book" data-svc="Minimalist tattoo"><span>Book this</span><span>&rarr;</span></a></div></article>
+  <article class="sc rv"><span class="n">03</span><div class="im"><img src="img/spiritual.jpg" alt="Circular mandala tattoo on a back" loading="lazy"></div><div class="tx"><h3>Spiritual Tattoos</h3><p>Meaningful tattoo designs inspired by spiritual symbols and beliefs.</p><a class="go" href="#book" data-svc="Spiritual tattoo"><span>Book this</span><span>&rarr;</span></a></div></article>
+  <article class="sc rv"><span class="n">04</span><div class="im"><img src="img/pierce.jpg" alt="Pierced ear close up" loading="lazy"></div><div class="tx"><h3>Piercings</h3><p>Clean and safe body piercing services, done with care.</p><a class="go" href="#book" data-svc="Piercing"><span>Book this</span><span>&rarr;</span></a></div></article>
+  <article class="sc rv"><span class="n">05</span><div class="im"><img src="img/nail1.jpg" alt="Hand with delicate nail art" loading="lazy"></div><div class="tx"><h3>Nail Art</h3><p>Professional nail art, from clean classics to detailed custom designs.</p><a class="go" href="#book" data-svc="Nail art"><span>Book this</span><span>&rarr;</span></a></div></article>
+ </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+ <div class="sh"><h2>Book your <em>appointment</em></h2><p>Four taps, then your request opens in WhatsApp. The studio confirms the design, price and slot with you.</p></div>
+ <div class="bk">
+  <div>
+   <div class="stp"><div class="l"><i>1</i><b>Choose a service</b></div><div class="chips" id="svc"></div></div>
+   <div class="stp"><div class="l"><i>2</i><b id="dl">Placement</b></div><div class="chips" id="det"></div></div>
+   <div class="stp" id="szs"><div class="l"><i>3</i><b>Size</b></div><div class="chips" id="siz"></div></div>
+   <div class="stp"><div class="l"><i id="n4">4</i><b>When</b></div><div class="chips" id="dayc" style="margin-bottom:10px"></div><div class="chips" id="timec"></div></div>
+  </div>
+  <aside class="sum"><h3>Your request</h3><dl><dt>Service</dt><dd id="s1"></dd><dt id="t2">Placement</dt><dd id="s2"></dd><dt id="t3">Size</dt><dd id="s3"></dd><dt>When</dt><dd id="s4"></dd></dl><a class="btn" id="wa" href="#" target="_blank" rel="noopener">Send request on WhatsApp</a><p class="note">Have a reference picture? Send it in the chat after this. Pricing is given by the studio after seeing your idea. Nothing is charged on this website.</p></aside>
+ </div>
+</div></section>
+
+<section id="safe"><div class="wrap safe">
+ <div class="ph rv"><img src="img/gloves.jpg" alt="Gloved hands during a tattoo session" loading="lazy"><img src="img/tray.jpg" alt="Clean tray with tools on a dark background" loading="lazy"></div>
+ <div class="rv"><span class="up" style="color:var(--gold)">Safety and care</span><h2>Precision. <em>Hygiene.</em><br>Attention to detail.</h2><p class="lead">Permanent work and piercings deserve a clean, careful room. Here is what to expect, and what the studio will confirm when you message.</p>
+  <ul class="std">
+   <li><i>I</i><div><b>A clean workspace</b><span>Hygiene is at the heart of how the studio works.</span></div></li>
+   <li><i>II</i><div><b>Sterile, single-use supplies<span class="chip">STUDIO TO CONFIRM</span></b><span>The studio states its needle, ink and jewellery standards here.</span></div></li>
+   <li><i>III</i><div><b>Aftercare you can follow<span class="chip">STUDIO TO CONFIRM</span></b><span>Clear written aftercare for every tattoo and piercing.</span></div></li>
+   <li><i>IV</i><div><b>Age, consent and health<span class="chip">STUDIO TO CONFIRM</span></b><span>Minimum age, ID and any health questions, before you book.</span></div></li>
+  </ul></div>
+</div></section>
+
+<section class="gal"><div class="wrap">
+ <div class="sh"><h2>The <em>craft</em></h2><p>A look at the kind of work, with the studio's own portfolio to replace these stock photos.</p></div>
+ <div class="g"><figure class="rv"><img src="img/sleeve.jpg" alt="Detailed sleeve tattoo being worked on" loading="lazy"><figcaption>Detail work</figcaption></figure><figure class="rv"><img src="img/nail2.jpg" alt="Hand with dark glossy nail art" loading="lazy"><figcaption>Nail art</figcaption></figure><figure class="rv"><img src="img/nailpro.jpg" alt="Nail technician at work" loading="lazy"><figcaption>Precision</figcaption></figure><figure class="rv"><img src="img/sign.jpg" alt="Tattoo studio window at night" loading="lazy"><figcaption>The studio</figcaption></figure></div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="sh"><h2>How it <em>works</em></h2><p>A clear path from idea to aftercare.</p></div>
+ <div class="proc"><div><i>1</i><b>Choose</b><span>Pick a service and a style, or bring your own idea.</span></div><div><i>2</i><b>Consult</b><span>Talk through design, placement and size on WhatsApp.</span></div><div><i>3</i><b>Appointment</b><span>Visit the studio at your confirmed slot.</span></div><div><i>4</i><b>Aftercare</b><span>Follow the care guide so it heals well.</span></div></div>
+</div></section>
+
+<section class="rev"><div class="wrap">
+ <div class="big">4.8</div>
+ <div><div class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div><h2 style="margin:8px 0 8px">Trusted by clients on Google</h2><p>Based on 151 reviews. Read what real customers say, in their own words, before you decide.</p></div>
+ <a class="btn" href="https://www.google.com/maps/search/?api=1&query=INK+ROOM+by+PRAD+Shop+A-164+Export+Line+Sarojini+Nagar+Market+New+Delhi" target="_blank" rel="noopener">Read reviews on Google</a>
+</div></section>
+
+<section id="faq"><div class="wrap faq">
+ <div class="lead"><h2>Before you <em>book</em></h2><p>Honest answers to the questions people ask most. The studio confirms the specifics for your design.</p><a class="btn o" href="https://wa.me/919211894060?text=Hi%20INK%20ROOM!%20I%20have%20a%20question%20before%20I%20book." target="_blank" rel="noopener">Ask the studio</a></div>
+ <div>
+  <details open><summary>How do I book?</summary><p>Use the booking form above. Your request opens in WhatsApp, and the studio replies to confirm design, price and time. No account, no payment on this site.</p></details>
+  <details><summary>Can I bring my own design?</summary><p>Yes. Send a reference picture in the chat. The studio will talk through how it can be adapted for your placement and size.</p></details>
+  <details><summary>How much will it cost?</summary><p>Price depends on design, size and placement, so the studio quotes after seeing your idea. Minimalist and small pieces are typically the simplest to estimate.</p></details>
+  <details><summary>Is there a deposit or rescheduling rule?<span class="chip">STUDIO TO CONFIRM</span></summary><p>Placeholder: the studio states its booking deposit, rescheduling window and cancellation terms here.</p></details>
+  <details><summary>How do I look after a new tattoo or piercing?<span class="chip">STUDIO TO CONFIRM</span></summary><p>Placeholder: the studio's aftercare steps, healing time and when to check back in. Ask on WhatsApp if you are unsure at any point.</p></details>
+  <details><summary>Is there a minimum age?<span class="chip">STUDIO TO CONFIRM</span></summary><p>Placeholder: the studio states its minimum age and consent rules, and what ID to bring.</p></details>
+ </div>
+</div></section>
+
+<section id="visit" style="padding-top:20px"><div class="wrap">
+ <div class="vis">
+  <div class="a"><span class="up" style="color:var(--gold)">Visit the studio</span><h2>Shop A-164, <em>Export Line</em></h2><p>Sarojini Nagar Market, Sarojini Nagar, New Delhi 110023</p><p class="note">Opening hours: ask on WhatsApp before you travel.</p><p class="note" style="margin-top:12px">Finding us: enter Sarojini Nagar Market, head to the Export Line, look for Shop A-164.</p>
+   <div class="btns"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=INK+ROOM+by+PRAD+Shop+A-164+Export+Line+Sarojini+Nagar+Market+New+Delhi" target="_blank" rel="noopener">Get directions</a><a class="btn o" href="tel:+919211894060">Call +91 92118 94060</a></div></div>
+  <div class="b"><div class="up" style="color:var(--gold)">Prefer to drop in? Tell us when</div><div class="chips" id="dayc2"></div><div class="chips" id="timec2"></div><a class="btn" id="wa3" href="#" target="_blank" rel="noopener">Let the studio know</a></div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="cols">
+  <div><a class="logo" href="#top">INK ROOM<small>by PRAD</small></a><p style="font-size:.9rem;max-width:320px">Tattoo artistry and premium beauty services in Delhi. Precision, hygiene and attention to detail.</p></div>
+  <div><h4>Services</h4><ul><li><a href="#services">Pre-Designed Tattoos</a></li><li><a href="#services">Minimalist Designs</a></li><li><a href="#services">Spiritual Tattoos</a></li><li><a href="#services">Piercings</a></li><li><a href="#services">Nail Art</a></li></ul></div>
+  <div><h4>Studio</h4><ul><li><a href="#safe">Safety and care</a></li><li><a href="#faq">Before you book</a></li><li><a href="#visit">Find us</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li><a href="https://wa.me/919211894060" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="tel:+919211894060">+91 92118 94060</a></li><li><a href="#visit">Shop A-164, Export Line</a></li></ul></div>
+ </div>
+ <div class="fine"><span>&copy; INK ROOM by PRAD</span><span>Concept demo by Kavimir &middot; Not the official site &middot; Photos are stock placeholders &middot; Safety and policy wording are samples</span></div>
+</div></footer>
+
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg></a>
+<div class="sticky"><a class="btn" id="wa2" href="#" target="_blank" rel="noopener">Book on WhatsApp</a></div>
+
+<script>
+const NUM='919211894060';
+const SV={
+'Pre-designed tattoo':{dl:'Placement',opts:['Forearm','Upper arm','Wrist','Shoulder or back','Ankle or leg','Not sure yet'],size:true},
+'Minimalist tattoo':{dl:'Placement',opts:['Wrist','Forearm','Behind the ear','Collarbone','Ankle','Not sure yet'],size:true},
+'Spiritual tattoo':{dl:'Placement',opts:['Forearm','Upper arm','Back','Chest','Ribs','Not sure yet'],size:true},
+'Piercing':{dl:'Area',opts:['Ear lobe','Ear cartilage','Nose','Eyebrow','Navel','Other'],size:false},
+'Nail art':{dl:'Style',opts:['Everyday classic','Detailed art','Full custom set','Accent nails','Not sure yet'],size:false}
+};
+const st={svc:'Minimalist tattoo',det:'Wrist',siz:'Small',day:'Tomorrow',time:'Afternoon'};
+const SIZES=['Small','Medium','Large','Not sure yet'];
+function chips(id,arr,k,cb){const el=document.getElementById(id);el.innerHTML=arr.map(a=>`<button class="${st[k]==a?'on':''}">${a}</button>`).join('');el.onclick=e=>{if(e.target.tagName!='BUTTON')return;st[k]=e.target.textContent;chips(id,arr,k,cb);cb()}}
+function pickSvc(){const d=SV[st.svc];if(!d.opts.includes(st.det))st.det=d.opts[0];document.getElementById('dl').textContent=d.dl;document.getElementById('t2').textContent=d.dl;chips('det',d.opts,'det',upd);document.getElementById('szs').style.display=d.size?'':'none';document.getElementById('n4').textContent=d.size?'4':'3';document.getElementById('t3').style.display=document.getElementById('s3').style.display=d.size?'':'none';upd()}
+function upd(){const d=SV[st.svc];document.getElementById('s1').textContent=st.svc;document.getElementById('s2').textContent=st.det;document.getElementById('s3').textContent=st.siz;document.getElementById('s4').textContent=st.day+', '+st.time.toLowerCase();
+const msg=`Hi INK ROOM! I'd like to book: ${st.svc}. ${d.dl}: ${st.det}.`+(d.size?` Size: ${st.siz}.`:'')+` Preferred: ${st.day.toLowerCase()}, ${st.time.toLowerCase()}. Please confirm the design, price and slot.`;
+const u='https://wa.me/'+NUM+'?text='+encodeURIComponent(msg);['wa','wa2','fab'].forEach(i=>document.getElementById(i).href=u);
+const m3=`Hi INK ROOM! I'd like to drop by ${st.day.toLowerCase()}, ${st.time.toLowerCase()}.`;document.getElementById('wa3').href='https://wa.me/'+NUM+'?text='+encodeURIComponent(m3);
+document.querySelectorAll('#dayc button,#dayc2 button').forEach(b=>b.classList.toggle('on',b.textContent==st.day));document.querySelectorAll('#timec button,#timec2 button').forEach(b=>b.classList.toggle('on',b.textContent==st.time))}
+chips('svc',Object.keys(SV),'svc',pickSvc);chips('siz',SIZES,'siz',upd);
+const days=['Today','Tomorrow','This weekend'],times=['Morning','Afternoon','Evening'];
+chips('dayc',days,'day',upd);chips('timec',times,'time',upd);chips('dayc2',days,'day',upd);chips('timec2',times,'time',upd);pickSvc();
+document.querySelectorAll('.go').forEach(a=>a.addEventListener('click',()=>{st.svc=a.dataset.svc;chips('svc',Object.keys(SV),'svc',pickSvc);pickSvc()}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script>
+</body></html>
